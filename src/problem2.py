@@ -108,6 +108,7 @@ def problem2a(circle, rectangle, window):
     window.continue_on_mouse_click()
 
     ln = rg.Line(rectangle.get_upper_right_corner(), rectangle.get_lower_left_corner())
+    ln.arrow = 'last'
     ln.attach_to(window)
     window.render()
     window.continue_on_mouse_click()
@@ -191,6 +192,12 @@ def problem2b(rect, n, delta, win):
     win.render()
     p1 = rect.get_upper_right_corner()
     p2 = rect.get_lower_left_corner()
+    if 5 > 4:
+        print(5)
+    elif 4 > 5:
+        print(3)
+
+
 
     for k in range(n - 1):
         p1.x = p1.x + delta
